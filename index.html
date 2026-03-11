@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>EgoLink Challenge – Egocentric Language‑Vision Interactive Network Knowledge</title>
+    <meta
+      name="description"
+      content="EgoLink: Egocentric Language‑Vision Interactive Network Knowledge Challenge – benchmarking social reasoning for embodied AI."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-inner">
+        <div class="nav-title">
+          <span>ACM MM 2026</span>
+          <span>EgoLink: Egocentric Social Intelligence Challenge</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#intro">Intro</a>
+          <a href="#tasks">Research Tasks</a>
+          <a href="#dataset">Dataset</a>
+          <a href="#evaluation">Evaluation</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a
+          class="nav-cta"
+          href="https://github.com/egolink/challenge2026"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Open</span>
+          <strong>GitHub Repo</strong>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="intro">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="eyebrow-label">EgoLink Challenge</span>
+            <span class="eyebrow-pill">Egocentric Language‑Vision Social Reasoning</span>
+          </div>
+          <h1>
+            Egocentric Social Intelligence
+            <span class="highlight">Beyond Navigation</span>
+          </h1>
+          <p class="hero-subtitle">
+            EgoLink: Egocentric Language‑Vision Interactive Network Knowledge Challenge
+            redefines the cognitive boundaries of embodied agents in social contexts.
+            Moving beyond physical navigation, it evaluates deep social understanding
+            across emotions, causal logic, behavioral intents, and egocentric summarization.
+          </p>
+          <div class="hero-kpis">
+            <div class="kpi">
+              <div class="kpi-main">1</div>
+              <div class="kpi-label">Integrated Track</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi-main">5k</div>
+              <div class="kpi-label">MCQ Samples</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi-main">70+ h</div>
+              <div class="kpi-label">Ego Video</div>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a
+              href="https://egolink-challenge.github.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary"
+            >
+              Official Website
+            </a>
+            <a
+              href="https://openreview.net/pdf?id=RHIpQVJSHX"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-ghost"
+            >
+              Challenge Paper (OpenReview)
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="pill-row">
+            <span class="pill">Egocentric Video</span>
+            <span class="pill">Multimodal MCQ</span>
+            <span class="pill">Social Reasoning</span>
+          </div>
+          <h2>Benchmarking Socially‑Aware Embodied AI</h2>
+          <p>
+            EgoLink introduces a large‑scale egocentric benchmark that uses multi‑dimensional
+            multiple‑choice questions (MCQs) to evaluate reasoning over emotions, causal logic,
+            and behavioral intents in real‑world human interactions.
+          </p>
+          <div class="hero-tracks" id="tasks">
+            <article class="track-card">
+              <div class="track-label">Dimension 1</div>
+              <div class="track-title">Emotional Perception &amp; Localization</div>
+              <p class="track-body">
+                Identify emotion categories and their precise temporal boundaries
+                within egocentric video streams.
+              </p>
+              <div class="track-tags">
+                <span class="track-tag">Emotion Recognition</span>
+                <span class="track-tag">Temporal Localization</span>
+              </div>
+            </article>
+            <article class="track-card">
+              <div class="track-label">Dimension 2</div>
+              <div class="track-title">Social Causal Reasoning</div>
+              <p class="track-body">
+                Analyze triggers behind emotions and explain causal mechanisms
+                driving social actions or reactions.
+              </p>
+              <div class="track-tags">
+                <span class="track-tag">Causality</span>
+                <span class="track-tag">Social Commonsense</span>
+              </div>
+            </article>
+            <article class="track-card">
+              <div class="track-label">Dimension 3</div>
+              <div class="track-title">Behavioral Intent Prediction</div>
+              <p class="track-body">
+                Infer subsequent intentions and potential social goals of
+                interlocutors based on conversational context.
+              </p>
+              <div class="track-tags">
+                <span class="track-tag">Intent Prediction</span>
+                <span class="track-tag">Future Trajectory</span>
+              </div>
+            </article>
+            <article class="track-card">
+              <div class="track-label">Dimension 4</div>
+              <div class="track-title">Egocentric Semantic Summarization</div>
+              <p class="track-body">
+                Select the most accurate high‑level description capturing the
+                essence of social exchanges from the ego‑agent’s perspective.
+              </p>
+              <div class="track-tags">
+                <span class="track-tag">High‑Level Summary</span>
+                <span class="track-tag">Multimodal Fusion</span>
+              </div>
+            </article>
+          </div>
+          <div class="hero-meta">
+            <span>
+              Built on:
+              <strong>E3 – Exploring Embodied Emotion</strong>
+            </span>
+            <span class="badge-soft">Toward socially‑aware general intelligence</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="grid-two" id="dataset">
+        <article class="card">
+          <header>
+            <h2 class="card-title">Dataset Foundation &amp; Scale</h2>
+            <p class="card-subtitle">
+              EgoLink transforms the E3 egocentric emotion dataset into a comprehensive
+              social reasoning benchmark.
+            </p>
+          </header>
+          <ul class="list">
+            <li>
+              <strong>Base Dataset – E3:</strong>
+              large‑scale egocentric video corpus for embodied emotion understanding
+              (<a href="https://exploring-embodied-emotion-official.github.io" target="_blank" rel="noopener noreferrer">project page</a>).
+            </li>
+            <li>
+              <strong>Video Collection:</strong>
+              ~20,000+ egocentric clips covering diverse social scenarios.
+            </li>
+            <li>
+              <strong>Total Duration:</strong>
+              70+ hours of annotated egocentric footage.
+            </li>
+            <li>
+              <strong>Scenario Coverage:</strong>
+              daily conversations, meetings, social gatherings, education, services, family.
+            </li>
+            <li>
+              <strong>Participant Diversity:</strong>
+              500+ individuals across demographics, ages, and cultures.
+            </li>
+          </ul>
+          <div class="chips">
+            <span class="chip accent-chip">Real‑world egocentric video</span>
+            <span class="chip">Emotion‑centric foundation</span>
+            <span class="chip">Social interaction focus</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <header>
+            <h2 class="card-title">Design Philosophy &amp; Splits</h2>
+            <p class="card-subtitle">
+              From perception to social cognition via a two‑tier supervision strategy.
+            </p>
+          </header>
+          <ul class="list">
+            <li>
+              <strong>Limited Supervision:</strong>
+              5,000 carefully designed MCQs encourage generalizable reasoning over
+              pattern memorization.
+            </li>
+            <li>
+              <strong>Transfer Learning:</strong>
+              models leverage E3 emotion annotations and pretrained knowledge to
+              bridge perception and social reasoning.
+            </li>
+            <li>
+              <strong>Cognitive Leap:</strong>
+              MCQs test causal inference, temporal generalization, intent prediction,
+              and multimodal synthesis beyond basic MER.
+            </li>
+          </ul>
+          <div class="schedule-grid">
+            <div class="schedule-item">
+              <div class="schedule-label">Training</div>
+              <div class="schedule-time">E3 split + 5k MCQs</div>
+              <p class="schedule-desc">
+                70+ hours of egocentric video with metadata, augmented by MCQs
+                spanning all four cognitive dimensions.
+              </p>
+            </div>
+            <div class="schedule-item">
+              <div class="schedule-label">Validation</div>
+              <div class="schedule-time">Balanced</div>
+              <p class="schedule-desc">
+                Derived from E3 validation, maintaining balanced coverage over
+                emotion, causality, intent, and summarization.
+              </p>
+            </div>
+            <div class="schedule-item">
+              <div class="schedule-label">Test</div>
+              <div class="schedule-time">Curated MCQs</div>
+              <p class="schedule-desc">
+                Complex edge cases, compositional tasks, and hidden
+                out‑of‑distribution scenarios for final ranking.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="grid-three" id="resources">
+        <article class="card">
+          <header>
+            <h2 class="card-title">Resources &amp; Licensing</h2>
+            <p class="card-subtitle">
+              Centralized access to data, code, and documentation for the EgoLink Challenge.
+            </p>
+          </header>
+          <p class="tagline">
+            All resources will be linked from the official website once launched.
+          </p>
+          <div class="topics-grid">
+            <div class="topics-item">
+              <strong>Project Resources</strong>
+              <p>
+                Official Website:
+                <a href="https://egolink-challenge.github.io" target="_blank" rel="noopener noreferrer">
+                  egolink-challenge.github.io
+                </a>
+                (to be launched) for downloads, leaderboards, docs, and FAQs.
+              </p>
+            </div>
+            <div class="topics-item">
+              <strong>GitHub Repository</strong>
+              <p>
+                <a href="https://github.com/egolink/challenge2026" target="_blank" rel="noopener noreferrer">
+                  github.com/egolink/challenge2026
+                </a>
+                hosts data loaders, preprocessing, evaluation toolkits, baselines,
+                training recipes, and submission validators.
+              </p>
+            </div>
+            <div class="topics-item">
+              <strong>Data Access &amp; License</strong>
+              <p>
+                Released under CC BY‑NC‑SA 4.0; free registration with institutional
+                email; non‑commercial research &amp; education only; derivative
+                works must share alike.
+              </p>
+            </div>
+            <div class="topics-item">
+              <strong>Documentation &amp; Support</strong>
+              <p>
+                Comprehensive manual on construction, annotation, metrics, and
+                submission specs; GitHub Discussions for Q&amp;A and troubleshooting.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" id="evaluation">
+          <header>
+            <h2 class="card-title">Evaluation &amp; Maintenance</h2>
+            <p class="card-subtitle">
+              Objective, MCQ‑based metrics and long‑term support for the benchmark.
+            </p>
+          </header>
+          <ul class="list">
+            <li>
+              <strong>Evaluation Protocol:</strong>
+              MCQ format minimizes subjective bias and enables reproducible,
+              fine‑grained analysis.
+            </li>
+            <li>
+              <strong>Primary Metric:</strong>
+              Overall Top‑1 Accuracy across all MCQs.
+            </li>
+            <li>
+              <strong>Dimension‑wise Scores:</strong>
+              breakdown over emotional perception, social causality, intent
+              prediction, and semantic summarization.
+            </li>
+            <li>
+              <strong>Maintenance Commitment:</strong>
+              official website, leaderboard, and evaluation infrastructure will
+              be maintained through 2029 (at least three years of guaranteed access).
+            </li>
+          </ul>
+          <div class="chips">
+            <span class="chip accent-chip">Top‑1 Accuracy</span>
+            <span class="chip">Dimension breakdown</span>
+            <span class="chip">Benchmark maintained to 2029</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="grid-three" id="publicity">
+        <article class="card">
+          <header>
+            <h2 class="card-title">Ethics &amp; Future Extensions</h2>
+            <p class="card-subtitle">
+              Privacy‑aware design with a roadmap for richer egocentric social intelligence.
+            </p>
+          </header>
+          <ul class="list">
+            <li>
+              <strong>Ethical Compliance:</strong>
+              explicit consent from video owners; alignment with YouTube, Douyin,
+              and Bilibili data policies; transparent data usage and withdrawal rights.
+            </li>
+            <li>
+              <strong>Data Minimization:</strong>
+              collection of only necessary information (portrait, voice, etc.)
+              with strict boundaries for research use.
+            </li>
+          </ul>
+          <p class="tagline">
+            Future extensions will enrich temporal depth, embodied actions, and dialogue structure.
+          </p>
+          <div class="topics-grid">
+            <div class="topics-item">
+              <strong>Temporal &amp; Longitudinal</strong>
+              <p>
+                Follow‑up recordings of evolving social relationships; frame‑level
+                annotations to support fine‑grained temporal modeling.
+              </p>
+            </div>
+            <div class="topics-item">
+              <strong>Embodied Action Grounding</strong>
+              <p>
+                Hand gestures, body movements, and physical interactions linking
+                social cognition with visible embodied actions.
+              </p>
+            </div>
+            <div class="topics-item">
+              <strong>Dialogue Annotation</strong>
+              <p>
+                Dialogue act labels, pragmatic functions, strategies, and
+                turn‑taking patterns from the ego‑agent’s viewpoint.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" id="contact">
+          <header>
+            <h2 class="card-title">Publicity &amp; Contact</h2>
+            <p class="card-subtitle">
+              Building a sustained research community around egocentric social intelligence.
+            </p>
+          </header>
+          <p class="tagline">
+            The organizing team will collaborate with ACM MM 2026 to maximize visibility
+            and participation.
+          </p>
+          <div class="people-columns">
+            <div>
+              <div class="people-role">Publicity &amp; Community</div>
+              <ul class="people-list">
+                <li>
+                  <strong>Publicity Channels</strong>
+                  <span>Academic mailing lists, social media, and ACM MM outlets.</span>
+                </li>
+                <li>
+                  <strong>Grand Challenge Workshop</strong>
+                  <span>
+                    Dedicated ACM MM 2026 session for winning solutions, technical
+                    insights, and community discussion.
+                  </span>
+                </li>
+                <li>
+                  <strong>Community Building</strong>
+                  <span>
+                    Long‑term research network around egocentric social reasoning
+                    and embodied AI.
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="people-role">Contact</div>
+              <ul class="people-list">
+                <li>
+                  <strong>Yueying Feng</strong>
+                  <span>Ant Group &amp; Zhejiang University – yueyingf@zju.edu.cn</span>
+                </li>
+                <li>
+                  <strong>Bohan Yu</strong>
+                  <span>Ant Group – ybh441692@antgroup.com</span>
+                </li>
+                <li>
+                  <strong>Renhe Sun</strong>
+                  <span>Ant Group – sunrenhe.srh@antgroup.com</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <div>
+          EgoLink: Egocentric Language‑Vision Interactive Network Knowledge Challenge.
+          This site summarizes the challenge description from the OpenReview paper
+          <em>“EgoLink: Egocentric Language‑Vision Interactive Network Knowledge Challenge”</em>.
+        </div>
+        <div class="footer-links">
+          <a
+            href="https://openreview.net/pdf?id=RHIpQVJSHX"
+            target="_blank"
+            rel="noopener noreferrer"
+            >OpenReview</a
+          >
+          <a
+            href="https://egolink-challenge.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Official Website</a
+          >
+          <a
+            href="https://github.com/egolink/challenge2026"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub Repo</a
+          >
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
+

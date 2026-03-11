@@ -1,0 +1,18 @@
+{
+  "name": "ego-link-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website for EgoLink: Egocentric Language-Vision Interactive Network Knowledge Challenge.",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "EgoLink",
+    "egocentric",
+    "social-intelligence",
+    "challenge-website"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+
