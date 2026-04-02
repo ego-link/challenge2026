@@ -409,6 +409,13 @@ main > .card + .card {
   object-position: center 12%;
 }
 
+/* Bohan Yu: pre-cropped headshot + slight scale/position so face matches others in the circle */
+.person-photo--bohan img {
+  object-position: 52% 44%;
+  transform: scale(1.12);
+  transform-origin: 50% 42%;
+}
+
 .person-name {
   margin: 0;
   font-size: 0.95rem;
