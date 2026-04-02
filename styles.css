@@ -383,6 +383,71 @@ main > .footer {
   color: var(--text);
 }
 
+.card > .card-title + .people-intro {
+  margin-top: 0.35rem;
+}
+
+.people-intro {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.people-intro a:hover {
+  text-decoration: underline;
+}
+
+.people-grid {
+  margin-top: 0.85rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+  gap: 1.35rem 1rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.person {
+  max-width: 180px;
+}
+
+.person-photo {
+  width: 132px;
+  height: 132px;
+  margin: 0 auto 0.45rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
+  background: #ececec;
+  flex-shrink: 0;
+}
+
+.person-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Bias upward so cropped circle emphasizes face (MER-style headshots) */
+  object-position: center 22%;
+  display: block;
+}
+
+.person-photo--focus-up img {
+  object-position: center 12%;
+}
+
+.person-name {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a4d7a;
+  line-height: 1.3;
+}
+
+.card .person .person-affil {
+  margin: 0.18rem 0 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
 .card header {
   position: static;
   border: 0;
@@ -546,6 +611,10 @@ main > .footer {
   .topics-grid,
   .people-columns {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .people-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   }
 }
 
