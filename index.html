@@ -12,13 +12,14 @@
       content="EgoLink: Egocentric Language‑Vision Interactive Network Knowledge Challenge – benchmarking social reasoning for embodied AI."
     />
     <meta name="theme-color" content="#1677FF" />
-    <link rel="stylesheet" href="styles.css?v=41" />
+    <link rel="stylesheet" href="styles.css?v=51" />
   </head>
   <body>
     <header>
       <div class="nav-inner">
         <div class="nav-title">
-          <span class="nav-title__brand">EgoLink @ ACM MM 2026</span>
+          <img class="nav-title__logo" src="page/ego_link.jpg" alt="EgoLink logo" />
+          <span class="nav-title__brand">EgoLink</span>
         </div>
         <nav class="nav-links">
           <a href="#intro">Intro</a>
@@ -35,45 +36,23 @@
     </header>
 
     <main>
-      <section class="card hero-banner">
-        <div class="title-with-logos title-with-logos--hero" aria-label="Host logos and title">
+      <section id="overlook" class="overlook-section">
+        <figure class="overlook-figure">
           <img
-            class="title-with-logos__mark"
-            src="logos/ant-group.svg"
-            width="220"
-            height="72"
-            alt="Ant Group"
+            src="page/overlook.jpg"
+            alt="EgoLink overlook"
+            loading="lazy"
           />
-          <h1 class="title-with-logos__heading">EgoLink Challenge @ ACM MM 2026</h1>
-          <img
-            class="title-with-logos__mark"
-            src="logos/zju.svg"
-            width="220"
-            height="72"
-            alt="Zhejiang University"
-          />
-        </div>
-        <p>
-          Egocentric Language-Vision Interactive Network Knowledge Challenge
-        </p>
+        </figure>
       </section>
 
       <section class="card" id="intro">
-        <h2 class="card-title">EgoLink Challenge @ ACM MM 2026</h2>
+        <h2 class="card-title">Intro</h2>
         <p>
           EgoLink (Egocentric Language-Vision Interactive Network Knowledge Challenge) focuses on social reasoning in egocentric video.
           Instead of only testing navigation or object perception, the benchmark evaluates emotional perception, causal understanding,
           behavioral intent prediction, and semantic summarization in real-world human interaction scenes.
         </p>
-        <p>
-          The challenge is built on E3 (Exploring Embodied Emotion) and introduces a unified MCQ-based protocol designed to be objective,
-          reproducible, and accessible to both multimodal learning and embodied AI communities.
-        </p>
-        <div class="chips">
-          <span class="chip accent-chip">1 integrated challenge track</span>
-          <span class="chip">5,000 MCQ samples</span>
-          <span class="chip">70+ hours egocentric video</span>
-        </div>
       </section>
 
       <section class="card" id="news">
@@ -90,22 +69,67 @@
 
       <section class="card" id="tasks">
         <h2 class="card-title">Challenge Tasks</h2>
+        <p>
+          <strong>Track 1: Social Reasoning in Egocentric Video.</strong>
+          This track focuses on social reasoning in egocentric video. Instead of only testing navigation or object perception, the benchmark
+          evaluates emotional perception, causal understanding, behavioral intent prediction, and semantic summarization in real-world
+          human interaction scenes.
+        </p>
+        <p>
+          The challenge is built on E3 (Exploring Embodied Emotion) and introduces a unified MCQ-based protocol designed to be objective,
+          reproducible, and accessible to both multimodal learning and embodied AI communities.
+        </p>
         <ul class="list">
           <li>
-            <strong>Dimension 1. Emotional Perception and Localization.</strong>
+            <strong>1) Emotional Perception and Localization.</strong>
             Identify emotional categories and their temporal boundaries in egocentric streams.
           </li>
           <li>
-            <strong>Dimension 2. Social Causal Reasoning.</strong>
+            <strong>2) Social Causal Reasoning.</strong>
             Analyze causal triggers behind observed social emotions and responses.
           </li>
           <li>
-            <strong>Dimension 3. Behavioral Intent Prediction.</strong>
+            <strong>3) Behavioral Intent Prediction.</strong>
             Infer likely future intentions and goals from multimodal interaction context.
           </li>
           <li>
-            <strong>Dimension 4. Egocentric Semantic Summarization.</strong>
+            <strong>4) Egocentric Semantic Summarization.</strong>
             Select the best high-level summary that captures the social episode from the ego perspective.
+          </li>
+        </ul>
+        <p>
+          <strong>Track 2: Interactive Agent Challenge: Multimodal Interaction Task Execution in Social Life Scenarios.</strong>
+          This track evaluates how well an intelligent agent can solve real-world tasks in complex and dynamic social-life environments
+          through tool use.
+        </p>
+        <p>
+          Unlike traditional static QA or single-modality recognition tasks, this track requires the model to act as an interactive
+          agent. The agent receives first-person visual streams (e.g., shopping, ordering food, and other high-frequency daily scenarios),
+          combines them with user natural-language instructions and available external tools, and completes user goals through multi-turn
+          dialogue, accurate tool invocation, autonomous planning, and closed-loop execution.
+        </p>
+        <p>
+          Beyond visual perception accuracy, this track primarily assesses the model's integrated intelligence in unstructured environments,
+          where perception, reasoning, and action must be tightly coupled.
+        </p>
+        <ul class="list">
+          <li>
+            <strong>1) Fine-grained Egocentric Visual Understanding.</strong>
+            The agent must process continuous video streams or temporal image sequences and understand the environment in a human-like way.
+            This includes spatiotemporal perception (e.g., object state changes over time and relative spatial relations) and attribute
+            recognition (e.g., color, shape, texture, and brand cues).
+          </li>
+          <li>
+            <strong>2) Dynamic Tool Invocation and Execution.</strong>
+            The agent must not only "talk" but also "act". It should decide when to invoke tools and which tool to use, construct correct
+            input parameters from real-time visual evidence (e.g., on-screen price or menu options), and close the loop by interpreting tool
+            outputs and selecting the next action (finish, retry, or switch strategy).
+          </li>
+          <li>
+            <strong>3) Multi-hop Logical Reasoning and Complex Decision Making.</strong>
+            For ambiguous and complex real-world user requests, the model is evaluated on high-level cognition such as conditional reasoning
+            ("if...then..." constraints) and multi-reference resolution in long dialogues and multi-object scenes (e.g., \"the red one\" or
+            \"the one we saw earlier\").
           </li>
         </ul>
       </section>
@@ -137,31 +161,6 @@
         </ul>
       </section>
 
-      <section class="card" id="resources">
-        <h2 class="card-title">Resources</h2>
-        <ul class="list">
-          <li>
-            <strong>Official Website:</strong>
-            <a href="https://egolink-challenge.github.io" target="_blank" rel="noopener noreferrer">
-              egolink-challenge.github.io
-            </a>
-          </li>
-          <li>
-            <strong>Paper:</strong>
-            <a href="https://openreview.net/pdf?id=RHIpQVJSHX" target="_blank" rel="noopener noreferrer">
-              OpenReview PDF
-            </a>
-          </li>
-          <li>
-            <strong>Code and Toolkit:</strong>
-            <a href="https://github.com/egolink/challenge2026" target="_blank" rel="noopener noreferrer">
-              github.com/egolink/challenge2026
-            </a>
-          </li>
-          <li><strong>License:</strong> CC BY-NC-SA 4.0 for non-commercial research and education usage.</li>
-        </ul>
-      </section>
-
       <section class="card" id="schedule">
         <h2 class="card-title">Schedule</h2>
         <ul class="list">
@@ -175,11 +174,12 @@
       </section>
 
       <section class="card" id="publicity">
-        <h2 class="card-title">Publicity and Community</h2>
+        <h2 class="card-title">Presentation policy</h2>
         <p>
-          The challenge will be publicized through ACM MM channels, academic mailing lists, and social media.
-          A dedicated workshop session is planned for presenting winning methods and promoting long-term community building
-          in egocentric social intelligence.
+          ACM Multimedia 2026 is an on-site event only. This means that all papers and contributions
+          must be presented by a physical person on-site; remote presentations will not be hosted or allowed. Papers and contributions not
+          presented on-site will be considered a no-show and removed from the proceedings of the conference. More details will be provided
+          to handle unfortunate situations in which none of the authors would be able to attend the conference physically.
         </p>
       </section>
 
@@ -251,16 +251,32 @@
             <h4 class="person-name">Haolin He</h4>
             <p class="person-affil">The Chinese University of Hong Kong (CUHK)</p>
           </article>
+          <article class="person">
+            <div class="person-photo"><img src="photos/ChangHan.jpg" alt="Han Chang" width="160" height="160" loading="lazy" /></div>
+            <h4 class="person-name">Han Chang</h4>
+            <p class="person-affil">Ant Group</p>
+          </article>
         </div>
       </section>
 
       <section class="card" id="contact">
         <h2 class="card-title">Contact</h2>
         <ul class="list">
-          <li><strong>Yueying Feng:</strong> yueyingf@zju.edu.cn</li>
-          <li><strong>Bohan Yu:</strong> ybh441692@antgroup.com</li>
-          <li><strong>Renhe Sun:</strong> sunrenhe.srh@antgroup.com</li>
+          <li>
+            <strong>Track1:</strong>
+            <strong>Renhe Sun:</strong> sunrenhe.srh@antgroup.com
+            <strong>Bohan Yu:</strong> ybh441692@antgroup.com
+          </li>
+          <li>
+            <strong>Track2:</strong>
+            <strong>Tong Niu:</strong> niutong.niu@antgroup.com
+            <strong>Zitong Wang:</strong> yesi.wzt@antgroup.com
+          </li>
         </ul>
+      </section>
+
+      <section class="card" id="license">
+        <p><strong>License:</strong> CC BY-NC-SA 4.0 for non-commercial research and education usage.</p>
       </section>
     </main>
   </body>
