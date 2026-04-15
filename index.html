@@ -49,16 +49,25 @@
       <section class="card" id="intro">
         <h2 class="card-title">Intro</h2>
         <p>
-          EgoLink (Egocentric Language-Vision Interactive Network Knowledge Challenge) focuses on social reasoning in egocentric video.
-          Instead of only testing navigation or object perception, the benchmark evaluates emotional perception, causal understanding,
-          behavioral intent prediction, and semantic summarization in real-world human interaction scenes.
+          EgoLink (Egocentric Language-Vision Interactive Network Knowledge Challenge) is designed to advance embodied AI within complex,
+          real-world egocentric scenarios. Moving beyond traditional navigation or static object perception, the challenge holistically
+          evaluates a model's capacity for social reasoning and interactive task execution. It challenges intelligent AI to not only
+          perceive emotional cues, understand causal relationships, and predict behavioral intents in human interactions but also to
+          actively solve daily life tasks through multimodal dialogue, dynamic tool use, and autonomous planning. EgoLink aims to foster
+          integrated intelligence where perception, reasoning, and decision-making are tightly coupled in unstructured social environments.
         </p>
       </section>
 
       <section class="card" id="news">
         <h2 class="card-title">News</h2>
         <ul class="list">
-          <li><strong>Apr 2026:</strong> Official challenge website initialized.</li>
+          <li>
+            <strong>Apr 15, 2026:</strong> Registration is now open. Welcome to sign up! 🎉🎉🎉
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNAkMcjg5znInV8X8iVy6Jx3VK4L1vH0UgHkj-UY6X81iU5w/viewform" target="_blank" rel="noopener noreferrer">
+              Register for EgoLink Challenge 2026
+            </a>
+          </li>
+          <li><strong>Apr 2, 2026:</strong> Official challenge website initialized.</li>
         </ul>
       </section>
 
@@ -131,6 +140,7 @@
 
       <section class="card" id="dataset">
         <h2 class="card-title">Dataset</h2>
+        <p><strong>Track 1</strong></p>
         <ul class="list">
           <li><strong>Foundation:</strong> Based on the E3 egocentric emotion dataset.</li>
           <li><strong>Scale:</strong> 20,000+ egocentric clips and 70+ hours video duration.</li>
@@ -140,10 +150,22 @@
             <strong>Supervision Setup:</strong> E3 annotations plus 5,000 MCQs to bridge perception and social cognition.
           </li>
         </ul>
+        <p><strong>Track 2</strong></p>
+        <ul class="list">
+          <li><strong>Foundation:</strong> Constructed specifically for multimodal interaction task execution in social-life scenarios.</li>
+          <li><strong>Scale:</strong> 1,000+ unique tasks with a video duration of 10-20s per task.</li>
+          <li><strong>Coverage:</strong> Focuses on high-frequency daily scenarios including kitchen, retail, restaurant, and food ordering.</li>
+          <li><strong>Tools:</strong> Integrates 100+ external tools and APIs available for agent invocation and manipulation.</li>
+          <li>
+            <strong>Supervision Setup:</strong> Contains 10,000+ structured knowledge entries (e.g., product details, menus, etc.) serving as
+            ground truth for execution verification.
+          </li>
+        </ul>
       </section>
 
       <section class="card" id="evaluation">
         <h2 class="card-title">Evaluation</h2>
+        <p><strong>Track 1</strong></p>
         <ul class="list">
           <li><strong>Protocol:</strong> Multi-dimensional MCQ evaluation for objective scoring.</li>
           <li><strong>Main Metric:</strong> Overall Top-1 Accuracy.</li>
@@ -154,12 +176,25 @@
             <strong>Maintenance:</strong> Website, leaderboard, and evaluation toolkit are planned to be maintained through 2029.
           </li>
         </ul>
+        <p><strong>Track 2</strong></p>
+        <ul class="list">
+          <li><strong>Protocol:</strong> Interactive API-based evaluation where agents interact with a server to receive tasks, feedback, and invoke tools.</li>
+          <li><strong>Main Metric:</strong> Overall Task Success Rate based on objective ground truth.</li>
+          <li><strong>Sub-Metrics:</strong> Tool Invocation Accuracy, Database State Accuracy, and Interaction Efficiency (measured by turns).</li>
+          <li><strong>Maintenance:</strong> Website, leaderboard, and evaluation toolkit.</li>
+        </ul>
       </section>
 
       <section class="card" id="schedule">
         <h2 class="card-title">Important Dates</h2>
         <p><strong>Track 1</strong></p>
         <ul class="list">
+          <li>
+            <strong>2026.04.15:</strong> E3 dataset is available for pre-download.
+            <a href="https://github.com/Exploring-Embodied-Emotion-official/E3" target="_blank" rel="noopener noreferrer">
+              E3 Dataset
+            </a>
+          </li>
           <li><strong>2026.04.30:</strong> Training dataset released.</li>
           <li><strong>2026.06.08:</strong> Evaluation dataset released.</li>
           <li><strong>2026.06.22 - 2026.06.25:</strong> Final answer and report submission window.</li>
@@ -250,8 +285,8 @@
             <p class="person-affil">The Chinese University of Hong Kong (CUHK)</p>
           </article>
           <article class="person">
-            <div class="person-photo"><img src="photos/ChangHan.jpg" alt="Han Chang" width="160" height="160" loading="lazy" /></div>
-            <h4 class="person-name">Han Chang</h4>
+            <div class="person-photo"><img src="photos/ChangHan.jpg" alt="Chang Han" width="160" height="160" loading="lazy" /></div>
+            <h4 class="person-name">Chang Han</h4>
             <p class="person-affil">Ant Group</p>
           </article>
         </div>
