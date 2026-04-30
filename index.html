@@ -13,7 +13,7 @@
       content="EgoLink: Egocentric Language‑Vision Interactive Network Knowledge Challenge – benchmarking social reasoning for embodied AI."
     />
     <meta name="theme-color" content="#1677FF" />
-    <link rel="stylesheet" href="styles.css?v=51" />
+    <link rel="stylesheet" href="styles.css?v=53" />
   </head>
   <body>
     <header>
@@ -28,6 +28,7 @@
           <a href="#tasks">Challenge Tasks</a>
           <a href="#dataset">Dataset</a>
           <a href="#evaluation">Evaluation</a>
+          <a href="#competition-rules">Competition Rules</a>
           <a href="#schedule">Important Dates</a>
           <a href="#publicity">Presentation policy</a>
           <a href="#organisers">Organisers</a>
@@ -64,10 +65,13 @@
         <h2 class="card-title">News</h2>
         <ul class="list">
           <li>
-            <strong>Apr 15, 2026:</strong> Registration is now open. Welcome to sign up! 🎉🎉🎉
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNAkMcjg5znInV8X8iVy6Jx3VK4L1vH0UgHkj-UY6X81iU5w/viewform" target="_blank" rel="noopener noreferrer">
-              Register for EgoLink Challenge 2026
-            </a>
+            <strong>Apr 15, 2026:</strong>
+            <strong>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNAkMcjg5znInV8X8iVy6Jx3VK4L1vH0UgHkj-UY6X81iU5w/viewform" target="_blank" rel="noopener noreferrer">
+                Register for EgoLink Challenge 2026
+              </a>
+              Registration is now open. Welcome to sign up! 🎉🎉🎉
+            </strong>
           </li>
           <li><strong>Apr 2, 2026:</strong> Official challenge website initialized.</li>
         </ul>
@@ -178,6 +182,29 @@
             <a href="https://github.com/ego-link/egolink2026/tree/main/doc/track2" target="_blank" rel="noopener noreferrer">
               Track 2 Evaluation & Submission Guide
             </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card" id="competition-rules">
+        <h2 class="card-title">Competition Rules</h2>
+        <ul class="list">
+          <li>
+            <strong>Data Usage:</strong> Participants may use only the officially released training and development sets for model
+            training, validation, model selection, and threshold determination. Participants may use open-source or closed-source models to
+            perform additional data processing on videos in the training and development sets.
+          </li>
+          <li>
+            <strong>External Data:</strong>
+            Except for the officially released data, the use of any external labeled or unlabeled video data is strictly prohibited for
+            training, fine-tuning, distillation, calibration, or pseudo-label construction, including self-generated synthetic data from
+            external generative models or services.
+          </li>
+          <li>
+            <strong>Pretrained Models:</strong>
+            Publicly available and traceable pretrained models are allowed, including self-supervised learning (SSL) models, multimodal
+            large language models (MLLMs), and other general-purpose pretrained models, provided that their sources can be clearly specified
+            in the final metadata.
           </li>
         </ul>
       </section>
