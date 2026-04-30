@@ -440,6 +440,10 @@ main > .card + .card {
   color: var(--text);
 }
 
+.no-wrap {
+  white-space: nowrap;
+}
+
 .overlook-figure {
   margin: 0;
 }

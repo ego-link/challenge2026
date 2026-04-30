@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>EgoLink Challenge – Egocentric Language‑Vision Interactive Network Knowledge</title>
+    <link rel="icon" type="image/jpeg" href="page/ego_link.jpg" />
     <meta
       name="description"
       content="EgoLink: Egocentric Language‑Vision Interactive Network Knowledge Challenge – benchmarking social reasoning for embodied AI."
@@ -142,26 +143,21 @@
       <section class="card" id="dataset">
         <h2 class="card-title">Dataset</h2>
         <p><strong>Track 1</strong></p>
-        <ul class="list">
-          <li><strong>Foundation:</strong> Based on the E3 egocentric emotion dataset.</li>
-          <li><strong>Scale:</strong> 20,000+ egocentric clips and 70+ hours video duration.</li>
-          <li><strong>Coverage:</strong> Meetings, family, education, social gatherings, and service scenarios.</li>
-          <li><strong>Participants:</strong> 500+ individuals with diverse demographics.</li>
-          <li>
-            <strong>Supervision Setup:</strong> E3 annotations plus 5,000 MCQs to bridge perception and social cognition.
-          </li>
-        </ul>
+        <p>
+          The dataset builds upon the E3 (Exploring Embodied Emotion) dataset, a pioneering large-scale egocentric video benchmark for
+          embodied emotion understanding. While E3 provides foundational egocentric video data with emotion annotations, EgoLink
+          transforms this resource into a comprehensive social reasoning benchmark through systematic re-annotation and
+          <span class="no-wrap">task reformulation. The MCQ construction</span> scheme references the methodology discussed in
+          <a href="https://arxiv.org/abs/2509.21060" target="_blank" rel="noopener noreferrer">
+            Measuring Audio's Impact on Correctness: Audio-Contribution-Aware Post-Training of Large Audio Language Models
+          </a>.
+        </p>
+        <p>
+          We will provide the constructed MCQ training set, the MCQ validation set, and the original E3 annotation labels to participants
+          for model training.
+        </p>
         <p><strong>Track 2</strong></p>
-        <ul class="list">
-          <li><strong>Foundation:</strong> Constructed specifically for multimodal interaction task execution in social-life scenarios.</li>
-          <li><strong>Scale:</strong> 1,000+ unique tasks with a video duration of 10-20s per task.</li>
-          <li><strong>Coverage:</strong> Focuses on high-frequency daily scenarios including kitchen, retail, restaurant, and food ordering.</li>
-          <li><strong>Tools:</strong> Integrates 100+ external tools and APIs available for agent invocation and manipulation.</li>
-          <li>
-            <strong>Supervision Setup:</strong> Contains 10,000+ structured knowledge entries (e.g., product details, menus, etc.) serving as
-            ground truth for execution verification.
-          </li>
-        </ul>
+        <p>This track provides benchmark data only and does not release a training set.</p>
       </section>
 
       <section class="card" id="evaluation">
@@ -170,19 +166,19 @@
         <ul class="list">
           <li><strong>Protocol:</strong> Multi-dimensional MCQ evaluation for objective scoring.</li>
           <li><strong>Main Metric:</strong> Overall Top-1 Accuracy.</li>
-          <li>
-            <strong>Sub-Metrics:</strong> Dimension-wise scores for emotion, causality, intent, and summarization.
-          </li>
-          <li>
-            <strong>Maintenance:</strong> Website, leaderboard, and evaluation toolkit are planned to be maintained through 2029.
-          </li>
+          <li><strong>Sub-Metrics:</strong> Dimension-wise scores for emotion, causality, intent, and summarization.</li>
         </ul>
         <p><strong>Track 2</strong></p>
         <ul class="list">
           <li><strong>Protocol:</strong> Interactive API-based evaluation where agents interact with a server to receive tasks, feedback, and invoke tools.</li>
           <li><strong>Main Metric:</strong> Overall Task Success Rate based on objective ground truth.</li>
           <li><strong>Sub-Metrics:</strong> Tool Invocation Accuracy, Database State Accuracy, and Interaction Efficiency (measured by turns).</li>
-          <li><strong>Maintenance:</strong> Website, leaderboard, and evaluation toolkit.</li>
+          <li>
+            <strong>Submission Guide:</strong>
+            <a href="https://github.com/ego-link/egolink2026/tree/main/doc/track2" target="_blank" rel="noopener noreferrer">
+              Track 2 Evaluation & Submission Guide
+            </a>
+          </li>
         </ul>
       </section>
 
@@ -192,7 +188,7 @@
         <ul class="list">
           <li>
             <strong>2026.04.15:</strong> E3 dataset is available for pre-download.
-            <a href="https://github.com/Exploring-Embodied-Emotion-official/E3" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Exploring-Embodied-Emotion-official/E3/tree/main/dataset" target="_blank" rel="noopener noreferrer">
               E3 Dataset
             </a>
           </li>
