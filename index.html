@@ -24,6 +24,7 @@
         </div>
         <nav class="nav-links">
           <a href="#intro">Intro</a>
+          <a href="https://github.com/ego-link/egolink2026" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="#news">News</a>
           <a href="#tasks">Challenge Tasks</a>
           <a href="#dataset">Dataset</a>
@@ -58,6 +59,11 @@
           perceive emotional cues, understand causal relationships, and predict behavioral intents in human interactions but also to
           actively solve daily life tasks through multimodal dialogue, dynamic tool use, and autonomous planning. EgoLink aims to foster
           integrated intelligence where perception, reasoning, and decision-making are tightly coupled in unstructured social environments.
+        </p>
+        <p>
+          Visit the
+          <a href="https://github.com/ego-link/egolink2026" target="_blank" rel="noopener noreferrer">official EgoLink 2026 GitHub repository</a>
+          for datasets, documentation, evaluation tools, and submission resources.
         </p>
       </section>
 
@@ -146,6 +152,10 @@
 
       <section class="card" id="dataset">
         <h2 class="card-title">Dataset</h2>
+        <p>
+          All official challenge materials are hosted on
+          <a href="https://github.com/ego-link/egolink2026" target="_blank" rel="noopener noreferrer">github.com/ego-link/egolink2026</a>.
+        </p>
         <p><strong>Track 1</strong></p>
         <p>
           The dataset builds upon the E3 (Exploring Embodied Emotion) dataset, a pioneering large-scale egocentric video benchmark for
@@ -156,12 +166,42 @@
             Measuring Audio's Impact on Correctness: Audio-Contribution-Aware Post-Training of Large Audio Language Models
           </a>.
         </p>
+        <p><strong>Dataset Download</strong></p>
+        <ul class="list">
+          <li>
+            <strong>Training video dataset:</strong>
+            <a href="https://github.com/Exploring-Embodied-Emotion-official/E3/tree/main/dataset" target="_blank" rel="noopener noreferrer">
+              E3 dataset
+            </a>
+          </li>
+        </ul>
+        <p><strong>Training Set Release</strong></p>
+        <ul class="list">
+          <li>
+            <strong>Part 1:</strong> Updated labels available at
+            <a href="https://github.com/ego-link/egolink2026/blob/main/dataset/track1/E3_train.json" target="_blank" rel="noopener noreferrer">
+              E3_train.json
+            </a>
+          </li>
+          <li>
+            <strong>Part 2:</strong> MCQ data released at
+            <a href="https://github.com/ego-link/egolink2026/blob/main/dataset/track1/train_MCQ.jsonl" target="_blank" rel="noopener noreferrer">
+              train_MCQ.jsonl
+            </a>
+          </li>
+        </ul>
         <p>
-          We will provide the constructed MCQ training set, the MCQ validation set, and the original E3 annotation labels to participants
-          for model training.
+          <strong>Important Note:</strong> Please use the video data from the E3 dataset paired with our label information. Do not use
+          the original labels from the E3 dataset.
         </p>
         <p><strong>Track 2</strong></p>
         <p>This track provides benchmark data only and does not release a training set.</p>
+        <p>
+          A paper describing the benchmark construction details is now available at:
+          <a href="https://arxiv.org/abs/2605.27820" target="_blank" rel="noopener noreferrer">
+            https://arxiv.org/abs/2605.27820
+          </a>
+        </p>
       </section>
 
       <section class="card" id="evaluation">
@@ -207,6 +247,18 @@
             in the final metadata.
           </li>
         </ul>
+        <p><strong>General Rules</strong></p>
+        <ul class="list">
+          <li>
+            <strong>Multimodal Large Model Policy:</strong> Only open-source multimodal large models are permitted for the system submitted
+            for evaluation. Closed-source/API-only models are prohibited. This restriction applies exclusively to the final inference and
+            submission system; there are no restrictions on the models or tools used for data preprocessing and dataset refinement.
+          </li>
+          <li>
+            <strong>No Manual Labeling:</strong> Participants are not allowed to perform manual annotations or subjective judgments on the
+            evaluation set.
+          </li>
+        </ul>
       </section>
 
       <section class="card" id="schedule">
@@ -219,7 +271,17 @@
               E3 Dataset
             </a>
           </li>
-          <li><strong>2026.05.10:</strong> Training dataset label release.</li>
+          <li>
+            <strong>2026.05.10:</strong> Training dataset label release.
+            Part 1:
+            <a href="https://github.com/ego-link/egolink2026/blob/main/dataset/track1/E3_train.json" target="_blank" rel="noopener noreferrer">
+              E3_train.json
+            </a>;
+            Part 2:
+            <a href="https://github.com/ego-link/egolink2026/blob/main/dataset/track1/train_MCQ.jsonl" target="_blank" rel="noopener noreferrer">
+              train_MCQ.jsonl
+            </a>
+          </li>
           <li><strong>2026.06.08:</strong> Evaluation dataset released.</li>
           <li><strong>2026.06.22 - 2026.06.25:</strong> Final answer and report submission window.</li>
         </ul>
