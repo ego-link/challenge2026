@@ -13,7 +13,7 @@
       content="EgoLink: Egocentric Language‑Vision Interactive Network Knowledge Challenge – benchmarking social reasoning for embodied AI."
     />
     <meta name="theme-color" content="#1677FF" />
-    <link rel="stylesheet" href="styles.css?v=53" />
+    <link rel="stylesheet" href="styles.css?v=61" />
   </head>
   <body>
     <header>
@@ -29,6 +29,7 @@
           <a href="#tasks">Challenge Tasks</a>
           <a href="#dataset">Dataset</a>
           <a href="#evaluation">Evaluation</a>
+          <a href="#leaderboard">Leaderboard</a>
           <a href="#competition-rules">Competition Rules</a>
           <a href="#schedule">Important Dates</a>
           <a href="#publicity">Presentation policy</a>
@@ -70,6 +71,10 @@
       <section class="card" id="news">
         <h2 class="card-title">News</h2>
         <ul class="list">
+          <li>
+            <strong>Jun 25, 2026:</strong>
+            <strong><a href="#leaderboard">Leaderboard</a></strong> updated with the top five teams for Track 1 and Track 2. Congratulations to all participating teams! 🎉🏆🎊
+          </li>
           <li>
             <strong>Apr 15, 2026:</strong>
             <strong>
@@ -190,6 +195,14 @@
             </a>
           </li>
         </ul>
+        <p><strong>Benchmark Release</strong></p>
+        <ul class="list">
+          <li>
+            <a href="https://huggingface.co/datasets/EgoLink/EgoLink2026" target="_blank" rel="noopener noreferrer">
+              EgoLink2026 on Hugging Face
+            </a>
+          </li>
+        </ul>
         <p>
           <strong>Important Note:</strong> Please use the video data from the E3 dataset paired with our label information. Do not use
           the original labels from the E3 dataset.
@@ -224,6 +237,143 @@
             </a>
           </li>
         </ul>
+      </section>
+
+      <section class="card" id="leaderboard">
+        <h2 class="card-title">Leaderboard</h2>
+        <p class="people-intro">
+          <strong>Note:</strong> We only publish the top five teams on this page. For complete ranking details, please email the contact addresses listed in
+          the <a href="#contact">Contact</a> section below.
+        </p>
+        <p><strong>Track 1</strong></p>
+        <div class="table-wrap">
+          <table class="leaderboard-table leaderboard-table--track1">
+            <colgroup>
+              <col class="lb-col-rank" />
+              <col class="lb-col-team" />
+              <col class="lb-col-affil-track1" />
+              <col class="lb-col-metric-double" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">Rank</th>
+                <th scope="col">Team Name</th>
+                <th>Affiliation</th>
+                <th>Accuracy</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1 <span class="medal medal--gold" aria-label="Gold medal">🥇</span></td>
+                <td>GXU-LIPE</td>
+                <td>Guangxi University</td>
+                <td>0.9263</td>
+              </tr>
+              <tr>
+                <td>2 <span class="medal medal--silver" aria-label="Silver medal">🥈</span></td>
+                <td>Lai</td>
+                <td>Harbin Institute of Technology</td>
+                <td>0.9246</td>
+              </tr>
+              <tr>
+                <td>3 <span class="medal medal--bronze" aria-label="Bronze medal">🥉</span></td>
+                <td>TeleAI</td>
+                <td>China Telecom Artificial Intelligence Technology (Beijing) Co., Ltd.</td>
+                <td>0.9132</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>EgoMinds</td>
+                <td>Peking University</td>
+                <td>0.9092</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>wjdd</td>
+                <td>Guangxi University</td>
+                <td>0.9089</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>MR-CAS</td>
+                <td>University of Chinese Academy of Sciences</td>
+                <td>0.9089</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong>Track 2</strong></p>
+        <div class="table-wrap table-wrap--track2">
+          <table class="leaderboard-table leaderboard-table--track2">
+            <colgroup>
+              <col class="lb-col-rank" />
+              <col class="lb-col-team" />
+              <col class="lb-col-affil" />
+              <col class="lb-col-metric" />
+              <col class="lb-col-metric" />
+              <col class="lb-col-metric" />
+              <col class="lb-col-metric" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">Rank</th>
+                <th scope="col">Team Name</th>
+                <th scope="col">Affiliation</th>
+                <th scope="col" class="metric-header">avg_joint<br />success_rate</th>
+                <th scope="col" class="metric-header">avg_micro<br />accuracy</th>
+                <th scope="col" class="metric-header">avg_result_based<br />success_rate</th>
+                <th scope="col" class="metric-header">avg_tool_based<br />success_rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1 <span class="medal medal--gold" aria-label="Gold medal">🥇</span></td>
+                <td>MediaLab</td>
+                <td>Shanghai Jiao Tong University</td>
+                <td><strong>0.844</strong></td>
+                <td><strong>0.916</strong></td>
+                <td>0.875</td>
+                <td><strong>0.854</strong></td>
+              </tr>
+              <tr>
+                <td>2 <span class="medal medal--silver" aria-label="Silver medal">🥈</span></td>
+                <td>GML-MM Group</td>
+                <td>The GUANGMING LABORATORY (Shenzhen City)</td>
+                <td>0.823</td>
+                <td>0.914</td>
+                <td>0.854</td>
+                <td>0.823</td>
+              </tr>
+              <tr>
+                <td>3 <span class="medal medal--bronze" aria-label="Bronze medal">🥉</span></td>
+                <td>BigVisionAgentGoGoGo</td>
+                <td>StarAI Lab</td>
+                <td>0.771</td>
+                <td>0.882</td>
+                <td><strong>0.885</strong></td>
+                <td>0.792</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>usestc_goat</td>
+                <td>Qinghai University</td>
+                <td>0.719</td>
+                <td>0.807</td>
+                <td>0.750</td>
+                <td>0.729</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>EgoMinds</td>
+                <td>Peking University</td>
+                <td>0.604</td>
+                <td>0.733</td>
+                <td>0.646</td>
+                <td>0.615</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section class="card" id="competition-rules">

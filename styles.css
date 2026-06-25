@@ -684,6 +684,129 @@ main > .card + .card {
   font-size: 0.78rem;
 }
 
+.table-wrap {
+  margin-top: 0.55rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-wrap--track2 {
+  overflow-x: visible;
+}
+
+#leaderboard {
+  --lb-rank: 5%;
+  --lb-team: 16%;
+  --lb-affil: 22%;
+  --lb-metric: 14.25%;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+  table-layout: fixed;
+}
+
+.lb-col-rank {
+  width: var(--lb-rank);
+}
+
+.lb-col-team {
+  width: var(--lb-team);
+}
+
+.lb-col-affil {
+  width: var(--lb-affil);
+}
+
+.lb-col-affil-track1 {
+  width: calc(var(--lb-affil) + var(--lb-metric) + var(--lb-metric));
+}
+
+.lb-col-metric {
+  width: var(--lb-metric);
+}
+
+.lb-col-metric-double {
+  width: calc(var(--lb-metric) * 2);
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 0.45rem 0.4rem;
+  border: 1px solid var(--line-strong);
+  text-align: left;
+  vertical-align: top;
+}
+
+.leaderboard-table th:nth-child(1),
+.leaderboard-table td:nth-child(1) {
+  white-space: nowrap;
+}
+
+.leaderboard-table th:nth-child(2),
+.leaderboard-table td:nth-child(2) {
+  word-break: break-word;
+}
+
+.leaderboard-table th {
+  background: var(--ant-primary-bg);
+  color: var(--title);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.leaderboard-table tbody tr:nth-child(even) {
+  background: var(--ant-bg-soft);
+}
+
+.leaderboard-table td:first-child {
+  font-weight: 600;
+}
+
+.leaderboard-table--track2 th {
+  white-space: normal;
+  line-height: 1.25;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.leaderboard-table--track2 th:nth-child(1),
+.leaderboard-table--track2 th:nth-child(2) {
+  white-space: nowrap;
+}
+
+.leaderboard-table--track2 th.metric-header {
+  line-height: 1.25;
+  hyphens: manual;
+}
+
+.leaderboard-table--track2 td {
+  word-break: break-word;
+}
+
+.leaderboard-table--track2 th:not(:nth-child(-n + 3)),
+.leaderboard-table--track2 td:not(:nth-child(-n + 3)) {
+  text-align: left;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.medal {
+  margin-left: 0.15rem;
+}
+
+@media (max-width: 720px) {
+  .table-wrap--track2 {
+    overflow-x: auto;
+  }
+
+  .leaderboard-table--track2 {
+    min-width: 36rem;
+  }
+}
+
 @media (max-width: 980px) {
   .hero,
   .grid-two,
